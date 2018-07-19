@@ -1,0 +1,11 @@
+Shortened by >200	538
+Shortened by 151-200	52
+Shortened by 101-150	62
+Shortened by 51-100	138
+Shortened by 10-50	333
+Within 10 bases of annotated end	9925
+Lengthened by 10-50	640
+Lengthened by 51-100	446
+Lengthened by 101-150	296
+Lengthened by 151-200	191
+Lengthened by >200	1280

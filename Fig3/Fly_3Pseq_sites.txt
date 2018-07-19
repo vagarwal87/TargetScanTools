@@ -1,0 +1,5 @@
+Poly(A) sites annotated in FlyBase	6411
+Poly(A) sites reported in Smibert et al.	3682
+Novel poly(A) sites	6939
+CDS/TSS/Intron/Mitochondrial/Repeat	1463
+Intergenic	596

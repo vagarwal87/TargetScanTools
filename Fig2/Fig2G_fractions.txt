@@ -1,0 +1,10 @@
+SITE	FracRepressed	FracConserved	FracRepressed_miR124	FracRepressed_miR1	FracRepressed_miR263a	FracRepressed_miR4	FracRepressed_miR92a	FracRepressed_miR994
+8mer	0.58	0.515	0.72	0.76	0.93	0.51	0.53	0.67
+7mer-m8	0.39	0.319	0.47	0.53	0.38	0.44	0.54	0.41
+7mer-A1	0.39	0.329	0.17	0.63	0.48	0.51	0.46	0.37
+6mer	0.2	0.093	0.18	0.44	0.3	0.28	0.19	0.16
+Offset 6mer	0.12	0.018	0.22	0.11	0.3	0.071	0.29	0.052
+6mer-A1	0.19	-0.004	0.18	0.3	0.32	0.11	0.3	0.17
+8mer,5pUTR	0.38	0.26	0.5	0.49	0.44	0.37	0.46	0.48
+7mer-m8,5pUTR	0.12	0.051	0.32	0.48	0.14	0.19	0.026	0.33
+7mer-A1,5pUTR	0.076	0.092	0.18	0.089	0.22	0.1	0.37	0.049
