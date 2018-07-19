@@ -88,7 +88,7 @@ while(<MIRSEQFILE>){ chomp($_);
 		$consid=$flyid2countid{$utr_id};
 
 		#branch length score calculation requires running pipeline to extract 3' UTR alignments in Fig2
-		@mybls = split / /, site_bls($seven8, $site_type, $gene2bin{$consid}, $pos, "/lab/bartel3_ata/agarwal/databases/multifasta_$species/$region/$consid.mfa"); #../Fig2/
+		@mybls = split / /, site_bls($seven8, $site_type, $gene2bin{$consid}, $pos, "../Fig2/multifasta_$species/$region/$consid.mfa");
 
 		($rnascore) = sprintf("%.2f", rnahybrid(rev(rev($miR)), rev(rev($target))));
 

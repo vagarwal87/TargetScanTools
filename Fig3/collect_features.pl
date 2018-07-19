@@ -26,7 +26,7 @@ sub readFasta2{
 
 ###THESE DATA RELY ON GENOME-WIDE ALIGNMENTS THAT ARE NOT PROVIDED WITH THIS PACKAGE..must extract multiple sequence alignments yourself
 ###comment out code block below, and remove need to compute branch length score later in this script to proceed without branch length scores
-open IN, "</lab/bartel3_ata/agarwal/metazoans/$species/$region/allgenes.bins" || die "Could not open fasta file for $fasta\n"; #../Fig2
+open IN, "<../Fig2/$species/$region/allgenes.bins" || die "Could not open fasta file for $fasta\n";
 while (<IN>){ chomp;
 	@a = split /\t/;
 	$gene2bin{$a[0]} = $a[-1];
@@ -97,8 +97,8 @@ while(<MIRSEQFILE>){ chomp($_);
 		$orfAU = 1-gcContent($seqorf);
 		$utr5AU = 1-gcContent($seq5utr);
 
-		### comment this out to run script without branch length scores
-		@mybls = split / /, site_bls($seven8, $site_type, $gene2bin{$utr_id}, $pos, "/lab/bartel3_ata/agarwal/databases/multifasta_$species/$region/$utr_id.mfa"); #../Fig2
+		### comment this out to run script without branch length scores, need to compute multiple sequence alignments otherwise for it to work
+		@mybls = split / /, site_bls($seven8, $site_type, $gene2bin{$utr_id}, $pos, "../Fig2/multifasta_$species/$region/$utr_id.mfa");
 
 		$score3p = contextScore($site_type, $localau, $pos, $min_dist, $ta, $sps, $miR, "A".$seq); #add A so ribosome shadow error never occurs
 		$rnascore = sprintf("%.2f", rnahybrid(rev(rev($miR)), rev(rev($target))));
