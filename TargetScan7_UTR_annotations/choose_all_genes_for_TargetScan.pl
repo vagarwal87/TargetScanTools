@@ -1,7 +1,5 @@
 #!/usr/bin/perl
 
-use allfxns;
-
 $file = "dmel-all-no-analysis-r6.19.gff.gz";
 
 #map transcript IDs to gene IDs
@@ -51,7 +49,7 @@ while(<IN>){
 }
 close IN;
 	
-open IN, "<lai_2017_3utr_ends.gff";
+open IN, "zcat lai_2017_3utr_ends.gff.gz | ";
 while(<IN>){
 	($chr, $start, $str) = (split /\t/)[0,3,6];
 	$chr = substr($chr,3);
@@ -194,4 +192,4 @@ sub findUTR{
 	if ($str eq '+'){ for($i = $searchpos+1; $i <= $lastpos; ++$i){ last if ($exonpos{$chr}{$i}{$str}); $mypos = $i if ($tagcounts{$chr}{$i}{$str} >= 10 || $i == $lastpos) && $i > $mypos; } } #last if hit start of any other exon $stopcodon+(2200+$intronlen3pUTR{$id})
 	else{ 		for($i = $searchpos-1; $i >= $lastpos; --$i){ last if ($exonpos{$chr}{$i}{$str}); $mypos = $i if ($tagcounts{$chr}{$i}{$str} >= 10 || $i == $lastpos) && $i < $mypos; } } #$stopcodon-(2200+$intronlen3pUTR{$id})
 	return $mypos;
-}v
+}
