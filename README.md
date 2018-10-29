@@ -4,8 +4,8 @@
 
 This repository is intended to accompany our submission. For more information please refer to:
 
-Agarwal V, Subtelny AO, Thiru P, Ulitsky I, Bartel DP. [Predicting microRNA targeting efficacy in Drosophila](https://www.biorxiv.org/content/early/2017/10/05/198689).
- _**bioRxiv**_. (2017).
+Agarwal V, Subtelny AO, Thiru P, Ulitsky I, Bartel DP. [Predicting microRNA targeting efficacy in Drosophila](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1504-3).
+ _**Genome Biology**_, 19:152. (2018).
 
 The code is released to enhance reproducibility and as a suite of complementary tools to [TargetScan](www.targetscan.org) 
 in the hope it might help others in the future who work on new datasets.
