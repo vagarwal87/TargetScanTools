@@ -7,7 +7,7 @@ This repository is intended to accompany our submission. For more information pl
 Agarwal V, Subtelny AO, Thiru P, Ulitsky I, Bartel DP. [Predicting microRNA targeting efficacy in Drosophila](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1504-3).
  _**Genome Biology**_, 19:152. (2018).
 
-The code is released to enhance reproducibility and as a suite of complementary tools to [TargetScan](www.targetscan.org) 
+The code is released to enhance reproducibility and as a suite of complementary tools to [TargetScan](http://www.targetscan.org/fly_72/) 
 in the hope it might help others in the future who work on new datasets.
 
 These tools can be used in a variety of organisms to:
@@ -20,7 +20,7 @@ datasets (i.e., transfection, induction, knockdown, or knockout datasets) (as sh
 * compare the performance of diverse prediction algorithms on test sets (as shown in Fig 4)
 
 For a codebase to compute context scores for flies or other insects while incorporating 
-3' UTR isoform information, the code provided in [TargetScan](http://www.targetscan.org/cgi-bin/targetscan/data_download.cgi?db=fly_12) 
+3' UTR isoform information, the code provided in [TargetScan](http://www.targetscan.org/cgi-bin/targetscan/data_download.fly72.cgi) 
 is recommended for use instead of this code.
 
 If you find our code or our precomputed fly miRNA target predictions to be helpful for your work, please cite the paper above.
